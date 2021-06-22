@@ -1,0 +1,6 @@
+{
+	"AzureClientID": "42179834-220f-4751-84f7-ee1ee72bc9c3",
+	"AzureRedirectURI": "https://localhost:3000",
+	"AzureAuthority": "https://login.microsoftonline.com/393c4fdb-ee47-4f74-9fd0-8835162c0d8c",
+	"AzureRequestScope": "api://42179834-220f-4751-84f7-ee1ee72bc9c3/access_as_user"
+}

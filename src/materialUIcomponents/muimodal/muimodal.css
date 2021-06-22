@@ -1,0 +1,37 @@
+.muidialogtitle {
+	display: flex;
+	flex-flow: row wrap;
+};
+
+.dialog{
+max-width: 2500px;
+}
+
+
+.titletypo{
+	flex:1
+
+}
+
+.crossicon{
+flex:4
+}
+
+
+.modalsidenav{
+	flex:1;
+
+}
+.modalactualcontent{
+	flex: 4 1;
+    display: flex;
+    height: 250px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    padding: 19px 15px;
+    background-color: hsla(0,0%,100%,.95);
+    overflow: auto
+
+}

@@ -1,0 +1,185 @@
+git command
+1.git status
+2. gid add --all /git add filename
+3.git Diff
+4.git commit -m 'message'
+ if vim opens ,to come out of it
+ press esc :q! and enter
+
+
+ $ git status
+On branch feature/HGL-4274
+Your branch is up to date with 'origin/feature/HGL-42
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be
+  (use "git restore <file>..." to discard changes in
+        modified:   ui/hnv1-ui/package.json
+        deleted:    ui/hnv1-ui/packages/humanify-admi
+        modified:   ui/hnv1-ui/packages/humanify-user
+        deleted:    ui/hnv1-ui/packages/humanify-user
+        modified:   ui/hnv1-ui/packages/humanify-user
+        modified:   ui/hnv1-ui/packages/humanify-user
+        modified:   ui/hnv1-ui/packages/humanify-user
+        modified:   ui/hnv1-ui/yarn.lock
+
+Untracked files:
+  (use "git add <file>..." to include in what will be
+        ui/hnv1-ui/packages/humanify-admin/src/App.te
+        ui/hnv1-ui/packages/humanify-user/src/App.tes
+        ui/hnv1-ui/packages/humanify-user/src/assets/
+        ui/hnv1-ui/packages/humanify-user/src/compone
+        ui/hnv1-ui/packages/humanify-user/src/routes/
+        ui/hnv1-ui/packages/humanify-user/src/styledc
+        ui/hnv1-ui/packages/shared/src/Button/MUIButt
+
+no changes added to commit (use "git add" and/or "git
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTE
+$ git add all
+fatal: pathspec 'all' did not match any files
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTE
+$ git add --all
+warning: LF will be replaced by CRLF in ui/hnv1-ui/pa.svg.
+The file will have its original line endings in your
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTE
+$ git status
+On branch feature/HGL-4274
+Your branch is up to date with 'origin/feature/HGL-42
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   ui/hnv1-ui/package.json
+        deleted:    ui/hnv1-ui/packages/humanify-admi
+        new file:   ui/hnv1-ui/packages/humanify-admi
+        modified:   ui/hnv1-ui/packages/humanify-user
+        deleted:    ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/humanify-user
+        modified:   ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/humanify-user
+        modified:   ui/hnv1-ui/packages/humanify-user
+        modified:   ui/hnv1-ui/packages/humanify-user
+        new file:   ui/hnv1-ui/packages/shared/src/Bu
+        modified:   ui/hnv1-ui/yarn.lock
+
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTE
+$ git diff
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTE
+$ cd ui
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTE$ cd hnv1-ui/packageS/humanify-user
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTEumanify-user (feature/HGL-4274)
+$ git diff tsconfig.json
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTEumanify-user (feature/HGL-4274)
+$ git k
+git: 'k' is not a git command. See 'git --help'.
+
+The most similar commands are
+        am
+        fsck
+        gc
+        mv
+        p4
+        rm
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTEumanify-user (feature/HGL-4274)
+$ gitk
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTEumanify-user (feature/HGL-4274)
+$ git diff tsconfig.json
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTEumanify-user (feature/HGL-4274)
+$ git diff <tsconfig.json>
+bash: syntax error near unexpected token `newline'
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTEumanify-user (feature/HGL-4274)
+$ git difftool
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTEumanify-user (feature/HGL-4274)
+$ git commit -m 'sign up poc'
+[feature/HGL-4274 3b8e7d9] sign up poc
+ Committer: unknown <Global@BLR1-LHP-N71529.synapse.c
+Your name and email address were configured automatic
+on your username and hostname. Please check that they
+You can suppress this message by setting them explici
+following command and follow the instructions in your
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for t
+
+    git commit --amend --reset-author
+
+ 20 files changed, 450 insertions(+), 96 deletions(-)
+ delete mode 100644 ui/hnv1-ui/packages/humanify-admi
+bal@BLR1-LHP-N71529 MINGW64 /f/TTECDevelopment/withcoresdk/hnv1/ui/hnv1-ui/packageS/humanify-user (feature/HGL-4274)
+$ git config --global --edit
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTECDevelopment/withcoresdk/hnv1/ui/hnv1-ui/packageS/humanify-user (feature/HGL-4274)
+$ git status
+On branch feature/HGL-4274
+Your branch is ahead of 'origin/feature/HGL-4274' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTECDevelopment/withcoresdk/hnv1/ui/hnv1-ui/packageS/humanify-user (feature/HGL-4274)
+$ git commit --amend --reset-author
+[feature/HGL-4274 fec1811] sign up poc
+                                       20 files changed, 450 insertions(+), 96 deletions(-)
+                                                                                            delete mode
+100644 ui/hnv1-ui/packages/humanify-admin/src/App.test.ts
+                                                          create mode 100644 ui/hnv1-ui/packages/humanify-admin/src/App.test.tsx
+                         delete mode 100644 ui/hnv1-ui/packages/humanify-user/src/App.test.ts
+                                                                                              create mode 100644 ui/hnv1-ui/packages/humanify-user/src/App.test.tsx
+                                                            rewrite ui/hnv1-ui/packages/humanify-user/src/App.tsx (88%)
+                create mode 100644 ui/hnv1-ui/packages/humanify-user/src/assets/images/bgimage-login.jpg
+create mode 100644 ui/hnv1-ui/packages/humanify-user/src/assets/images/ttec-hn-logo.svg
+                                                                                        create mode 100644 ui/hnv1-ui/packages/humanify-user/src/components/LoginScreen.test.tsx
+                                                                         create mode 100644 ui/hnv1-ui/packages/humanify-user/src/components/LoginScreen.tsx
+                                                     create mode 100644 ui/hnv1-ui/packages/humanify-user/src/components/WelcomeScreen.test.tsx
+                                        create mode 100644 ui/hnv1-ui/packages/humanify-user/src/components/WelcomeScreen.tsx
+                      create mode 100644 ui/hnv1-ui/packages/humanify-user/src/routes/Routes.test.tsx
+                                                                                                      create mode 100644 ui/hnv1-ui/packages/humanify-user/src/routes/Routes.tsx
+                                                                         create mode 100644 ui/hnv1-ui/packages/humanify-user/src/styledcomponents/LoginscreenStyle.tsx
+                                                                create mode 100644 ui/hnv1-ui/packages/shared/src/Button/MUIButton.tsx
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTECDevelopment/withcoresdk/hnv1/ui/hnv1-ui/packageS/humanify-user (feature/HGL-4274)
+$ git status
+On branch feature/HGL-4274
+Your branch is ahead of 'origin/feature/HGL-4274' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTECDevelopment/withcoresdk/hnv1/ui/hnv1-ui/packageS/humanify-user (feature/HGL-4274)
+$ git push
+Enumerating objects: 52, done.
+Counting objects: 100% (52/52), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (33/33), done.
+Writing objects: 100% (35/35), 384.27 KiB | 12.81 MiB/s, done.
+Total 35 (delta 13), reused 0 (delta 0), pack-reused 0
+remote: Analyzing objects... (35/35) (676 ms)
+remote: Storing packfile... done (125 ms)
+remote: Storing index... done (72 ms)
+To https://dev.azure.com/TTEC-Engage/HnV1/_git/HnV1
+   2912532..fec1811  feature/HGL-4274 -> feature/HGL-4274
+
+BLR1-LHP-N71529+Global@BLR1-LHP-N71529 MINGW64 /f/TTECDevelopment/withcoresdk/hnv1/ui/hnv1-ui/packageS/humanify-user (feature/HGL-4274)
+$

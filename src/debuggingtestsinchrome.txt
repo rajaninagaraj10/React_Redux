@@ -1,0 +1,15 @@
+reference : https://create-react-app.dev/docs/debugging-tests/
+
+1.add scripts section in project.json
+
+"scripts": {
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
+  }
+
+  2.Place debugger; statements in any test and run:
+  $ npm run test:debug
+
+  This will start running your Jest tests, but pause before executing to allow a debugger to attach to the process.
+
+  Open the following in Chrome
+  about:inspect
