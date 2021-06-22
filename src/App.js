@@ -47,8 +47,8 @@ function App() {
 					{/* <BasicModal/> */}
 					{/* <CustomDeskDialog /> */}
 					{/* <Sample/> */}
-					{/* <CustomDeskModal       /> */}
-					<MUICheckbox       />
+					<CustomDeskModal />
+					{/* <MUICheckbox /> */}
 				</div>
 			</Provider>
 		</BrowserRouter>

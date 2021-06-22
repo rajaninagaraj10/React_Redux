@@ -37,14 +37,7 @@ const CustomDeskModal = () => {
 					isOpen={isModalOpen}
 					onRequestClose={closeModal}
 					shouldCloseOnOverlayClick={false}
-					// style={{
-					// 	overlay: {
-					// 		backgroundColor: "grey",
-					// 	},
-					// 	content: {
-					// 		color: "yellow",
-					// 	},
-					// }}
+
 				>
 					<ModalHeader>close icon</ModalHeader>
 					<ModalBody>
